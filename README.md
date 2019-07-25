@@ -2,8 +2,12 @@
 
 Acontinuacion se detallara lo que contiene el parcial
 
+Respuesta Pregunta 1.
 
-Respuesta pregunta 4.
+1. Inicialmente tome el programa de threads.c ubicado en mi repositorio de la tarea que realizamos hace un par de semanas,
+ahora con el codigo lo que hago es poner cerrar_puerta(puerta)
+
+RESPUESTA PREGUNTA 4.
 
 1. En este caso tenemos 5:100 donde 5 es el numero de instrucciones y 100 es
 el porcentaje de esa instruccion en la CPU para el caso de -l 5:100 el programa

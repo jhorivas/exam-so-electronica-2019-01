@@ -8,13 +8,13 @@ int main()
 
     if (call == 0)
         {
+        int call_wait = wait(NULL);
         printf("Hola soy el hijo\n");
         }
     else if (call > 0)
         {
-        sleep(1);
-        printf("Adios soy el padre\n");
+	printf("Adios soy el padre\n");
         }
-return 0;
+    return 0;
 }
 

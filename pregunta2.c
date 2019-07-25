@@ -1,32 +1,35 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "mycommon.h"
 #include "common.h"
 #include "common_threads.h"
+#include "entero.h"
 
-volatile int counter = 0; 
-int loops;
+//volatile int counter = 0; 
+//int loops;
+float v, u;
 
-void *worker(void *arg) {
-    int i;
-    for (i = 0; i < loops; i++) {
-	counter++;
-    }
-    return NULL;
+void *primero(void *arg) {
+	float z = 25;
+	float y = 350;
+	u = division(z,y);
+	return NULL;
 }
 
+void *segundo(void *arg) {
+	float x = 1250;
+	v = multiplicacion(x,u);
+	return NULL;
+}
+
+
 int main(int argc, char *argv[]) {
-    if (argc != 2) { 
-	fprintf(stderr, "usage: threads <loops>\n"); 
-	exit(1); 
-    } 
-    loops = atoi(argv[1]);
     pthread_t p1, p2;
-    printf("Initial value : %d\n", counter);
-    Pthread_create(&p1, NULL, worker, NULL); 
-    Pthread_create(&p2, NULL, worker, NULL);
+    Pthread_create(&p1, NULL, primero, NULL);
+    Pthread_create(&p2, NULL, segundo, NULL);
     Pthread_join(p1, NULL);
     Pthread_join(p2, NULL);
-    printf("Final value   : %d\n", counter);
+    printf("x =  %f\n", v);
     return 0;
 }
 
