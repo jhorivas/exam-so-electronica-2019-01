@@ -2,10 +2,46 @@
 
 Acontinuacion se detallara lo que contiene el parcial
 
-Respuesta Pregunta 1.
+RESPUESTA PROBLEMA 1.
 
 1. Inicialmente tome el programa de threads.c ubicado en mi repositorio de la tarea que realizamos hace un par de semanas,
-ahora con el codigo lo que hago es poner cerrar_puerta(puerta)
+ahora con el codigo lo que hago es seguir las instrucciones que nos dan en el documento del parcial.
+
+CASO 1: Para el caso colocamos cerrar puerta antes del for y la abrimos la puerta una vez finalizado el ciclo podemos
+observar para este caso que estos son aproximadamente los tiempos de ejecucion:
+1000 (t:1s)
+100000 (t:1s)
+10000000 (t:1s)
+1000000000 (t:7s)
+100000000000 (t:10s)
+
+CASO 2: Para este caso se coloca cerrar puerta justo antes de incrementar la variable y abrir puerta justo despues de 
+incrementar la variable los tiempos de ejecucion aproximadamente son:
+10 (t:1s)
+1000 (t:1s)
+100000 (t:1s)
+10000000 (t:3s)
+1000000000 (t:43s)
+
+Podemos decir que entre mas grande sea el argumento mas tiempo se demora el proceso, tambien observamos que los tiempos 
+de ejecucion para el segunda caso son mucho mayor que el del primero esto se debe a que ponemos tanto cerrar puerta
+como abrir puerta justo antes y justo despues de incrementar la variable
+
+RESPUESTA PROBLEMA 2:
+
+Para este ejercicio nuevamente se tomo como archivo principal el threads.c realizado anteriormente en este yo creo dos variables
+globales a las cuales llamo v y u, luego creo dos hilos de ejecucion uno llamado primero y el otro llamado segundo en el hilo primero
+creo dos variables tipo float las cuales son z y y con valores de 25 y 350 respectivamente luego en la variable u guardo el cociente o la division
+de estos dos variables, ahora en el segundo hilo de ejecucion creo una variable tipo float la cual es x con un valor de 1250 y ahora realizo la
+multiplicacion entre el valor guardado en u y x y esta operacion la guardo nuevamente en x, luego en el main lo que hago es imprimir el valor
+de esta multiplicacion, cabe destacar que para lograr hacer estas operaciones tome el entero.h que realizamos en las clases anteriores y la
+anadi al codigo para solamente poner division y multiplicacion y que estas se hicieran sin problema alguno.
+
+RESPUESTA PREGUNTA 3:
+ 
+Para este codigo nuevamente tome como referencia el que realizamos en la tarea entregada hace un par de semanas cogi ese mismo ejercicio
+y lo pegue lo unico que cambie que le puse la instruccion int call_wait en el proceso hijo, esto para lograr que siempre se ejecute
+primero el padre como lo pedian en el examen.
 
 RESPUESTA PREGUNTA 4.
 
