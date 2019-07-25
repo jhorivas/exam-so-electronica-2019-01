@@ -51,7 +51,8 @@ nos arroja la cantidad de procesos en la CPU agregandole el -c podemos observar
 el tiempo y el PID de las 5 instruciones que tenemos ademas de la entradas/salidas 
 y cuando agregamos -p podemos observar lo mismo que vemos anteriormente
 solo que ahora nos aparecen los porcetajes de la CPU y de las entradas y 
-salidas.
+salidas. El proceso 0 utiliza la CPU durante 5 instantes de tiempo y el proceso 1 durante 5 y 
+el total de tiempo usado por la CPU fue de 10.
 
 2.Cuando ponemos el -l 4:100 observamos el mismo comportamiento que vimos antewriormente
 solo que en este caso tenemos 4 instrucciones en vez de 5, para el segundo caso
@@ -59,4 +60,6 @@ cuando ponemos -l 1:100 -c nos aparece una tabla con 1 CPU que se esta ejecutand
 en el tiempo 1 mientras que las otras instrucciones esperan en el tiempo 2,3,4,5 ya que se produce una solicitud de entradas y salidas y en el tiempo 6
 termina. Cuando anexamos el -p obtenemos el porcentaje de uso de la CPU como
 de las entradas y salidas conociendo ahora que la mayor parte del programa se
-hicieron solicitudes de entradas y salidas.
+hicieron solicitudes de entradas y salidas. Y con base al primer punto se supone que debe tomarle 8 instantes de tiempo
+4 instrucciones de CPU y 4 de Entradas y salidas, cuando se ejecuta el comando el tiempo total de ejecucion es de 10
+instantes de tiempo de los cuales 4 son intensivos en CPU y 4 intensivos de entradas y salidas
