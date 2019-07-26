@@ -63,3 +63,16 @@ de las entradas y salidas conociendo ahora que la mayor parte del programa se
 hicieron solicitudes de entradas y salidas. Y con base al primer punto se supone que debe tomarle 8 instantes de tiempo
 4 instrucciones de CPU y 4 de Entradas y salidas, cuando se ejecuta el comando el tiempo total de ejecucion es de 10
 instantes de tiempo de los cuales 4 son intensivos en CPU y 4 intensivos de entradas y salidas
+
+RESPUESTA PREGUNTA 5
+
+Inicialmente manifestarle al profesor que este punto se realizo en conjunto con nuestro grupo de trabajo el cual
+esta conformado por Brayan Sinisterra, Sebastian Duran y Jhonathan Rivas, por la complejidad del problema decidimos
+hacerlo en conjunto teniendo en cuenta las consecuencias que pueda tomar el profesor quien ya decidira si toma en consideracion
+este punto o de lo contrario no lo toma, nosotros aceptaremos la decision.
+
+Inicialmente lo que hicimos fue acceder a los recursos que el docente nos puso a la mano estos tres links que contenian
+en gran proporcion la solucion del problema fue de gran ayuda para resolver una parte de este ejercicio el cual no se completo
+en su totalidad para este caso nosotros creamos la variable y le damos un argumento el cual vamos a concatenar luego
+accedemos al contenido de la variable PATH teniendo en cuenta las instrucciones suministradas en el link y finalemte vamos a 
+comprobar si el archivo existe y finalmente imprimimos la cadena.
